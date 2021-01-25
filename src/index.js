@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Typeform from './components/Typeform4';
+import TypeformFullScreen from './components/Typeform4';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <TypeformFullScreen />
   </React.StrictMode>,
   document.getElementById('root')
 );
