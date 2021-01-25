@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Typeform from './components/Typeform4';
 import TypeformFullScreen from './components/Typeform4';
+import TypeformRight from './components/Typeform_Widget';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <TypeformFullScreen />
+    <TypeformRight />
   </React.StrictMode>,
   document.getElementById('root')
 );
