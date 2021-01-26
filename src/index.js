@@ -9,8 +9,9 @@ import TypeformRight from './components/Typeform_Widget';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <TypeformFullScreen />
+    <h1>Anmeldung</h1>
+    {/* <App /> */}
+    {/* <TypeformFullScreen /> */}
     <TypeformRight />
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import * as typeformEmbed from '@typeform/embed'
+import "./widget.css";
 
 class TypeformRight extends React.Component {
 
     componentDidMount() {
         const popup1 = typeformEmbed.makePopup(
-            "https://bmd9bai2izv.typeform.com/to/BYkr9iLP",
+            "https://karinheinzl.typeform.com/to/N75W9teT",
+            // "https://bmd9bai2izv.typeform.com/to/BYkr9iLP",
             {
                 mode: 'drawer_right',
+                autoOpen: false,
                 autoClose: 3000,
                 hideHeaders: true,
                 hideFooter: true,
+        
                 onSubmit: function() {
                     console.log('Typeform successfully submitted')
                 } 
@@ -27,8 +31,11 @@ class TypeformRight extends React.Component {
   
     render() {
         return (
-            <div>
-                <button id="bt-popup" class="my-button">Anmeldung</button>
+            <div className="typeform-widget">
+                <h1>MeCademy</h1>
+                <h4>Erfolgreich bewerben!</h4>
+
+                <button id="bt-popup" className="my-button">Anmeldung</button>
             </div>
       );
     }
